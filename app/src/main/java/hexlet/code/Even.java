@@ -15,7 +15,7 @@ public class Even {
         Random random = new Random();
         var i = 0;
         while(i < 3) {
-            int number = random.nextInt();
+            int number = random.nextInt(100);
             System.out.println("Question: " + number);
             String answer = scanner1.nextLine();
             System.out.println("Your answer: " + answer);
@@ -25,7 +25,7 @@ public class Even {
             } else {
                 System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was '" + (number % 2 == 0 ? "yes" : "no") + "'.");
                 System.out.println("Let's try again");
-                i = 0;
+                scanner1.close();
             }
         }
         System.out.println("Congratulations, " +userName + "!");

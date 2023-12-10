@@ -1,4 +1,5 @@
 package hexlet.code;
+
 import java.util.Scanner;
 public class Engine {
     private static final int GAMEPOINT = 3;

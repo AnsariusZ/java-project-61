@@ -15,7 +15,7 @@ public class Calc {
         int number1 = random.nextInt(100);
         int number2 = random.nextInt(100);
         String operator = getRandomOperator();
-        String question = number1 + "" + operator + "" + number2;
+        String question = number1 + " " + operator + " " + number2;
         String answer = String.valueOf(calculate(operator, number1, number2));
         return new String[]{question, answer};
     }

@@ -2,6 +2,7 @@ package hexlet.code;
 
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
+import hexlet.code.games.GCD;
 
 import java.util.Scanner;
 
@@ -12,6 +13,7 @@ public class App {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
+        System.out.println("4 - GCD");
         System.out.println("0 - Exit");
         String userAnswer = scanner.next();
         System.out.println("Your choice: " + userAnswer);
@@ -23,6 +25,8 @@ public class App {
             Even.gameEven();
         } else if (userAnswer.equals("3")) {
             Calc.gameCalc();
+        } else if (userAnswer.equals("4")) {
+            GCD.gameGcd();
         }
         scanner.close();
     }

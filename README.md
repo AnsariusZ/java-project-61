@@ -4,3 +4,4 @@
 [https://github.com/hexlet-boilerplates/java-package](https://asciinema.org/a/PxJuuOWYKhLu5xxENhl7UFwXz)https://asciinema.org/a/PxJuuOWYKhLu5xxENhl7UFwXz
 https://asciinema.org/a/cZSHYMgYAuKhikt8IdgNyFZz6
 https://asciinema.org/a/tR0Ra9OsttMz4EYKpHqPGzXJF
+https://asciinema.org/a/zAX94J3W553i0ep4ZtKMFzSAI

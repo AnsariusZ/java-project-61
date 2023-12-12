@@ -35,7 +35,7 @@ public class Calc {
             case "*":
                 return number1 * number2;
             default:
-                return 0;
+                throw new RuntimeException("Для оператора " + operator + " не определена логика.");
         }
     }
 }

@@ -19,19 +19,27 @@ public class App {
         System.out.println("Your choice: " + userAnswer);
         System.out.println();
 
-        if (userAnswer.equals("1")) {
-            Cli.greet();
-        } else if (userAnswer.equals("2")) {
-            Even.gameEven();
-        } else if (userAnswer.equals("3")) {
-            Calc.gameCalc();
-        } else if (userAnswer.equals("4")) {
-            GCD.gameGcd();
-        } else if (userAnswer.equals("5")) {
-            Progression.gameProgression();
-        } else if (userAnswer.equals("6")) {
-            Prime.gamePrime();
+        switch (userAnswer) {
+            case "1":
+                Cli.greet();
+                break;
+            case "2":
+                Even.gameEven();
+                break;
+            case "3":
+                Calc.gameCalc();
+                break;
+            case "4":
+                GCD.gameGcd();
+                break;
+            case "5":
+                Progression.gameProgression();
+                break;
+            case "6":
+                Prime.gamePrime();
+                break;
         }
+
         scanner.close();
     }
 }

@@ -1,7 +1,8 @@
 package hexlet.code.games;
 
-import java.util.Random;
 import hexlet.code.Engine;
+import hexlet.code.Utils;
+
 public class Prime {
     public static boolean isPrime(int number) {
         if (number <= 1) {
@@ -16,8 +17,7 @@ public class Prime {
     }
 
     public static String[] generateNumbers() {
-        Random random = new Random();
-        int number = random.nextInt(100);
+        int number = Utils.getRandomNumbers(100);
         String question = String.valueOf(number);
         String answer = isPrime(number) ? "yes" : "no";
         return new String[]{question, answer};

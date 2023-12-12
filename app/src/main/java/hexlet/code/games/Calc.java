@@ -1,19 +1,17 @@
 package hexlet.code.games;
 
-import java.util.Random;
 import hexlet.code.Engine;
+import hexlet.code.Utils;
 
 public class Calc {
     private static String getRandomOperator() {
-        Random random = new Random();
-        int randomNumber = random.nextInt(3);
+        int randomNumber = Utils.getRandomNumbers(3);
         String[] operators = {"+", "-", "*"};
         return operators[randomNumber];
     }
     private static String[] generateNumbers() {
-        Random random = new Random();
-        int number1 = random.nextInt(100);
-        int number2 = random.nextInt(100);
+        int number1 = Utils.getRandomNumbers(100);
+        int number2 = Utils.getRandomNumbers(100);
         String operator = getRandomOperator();
         String question = number1 + " " + operator + " " + number2;
         String answer = String.valueOf(calculate(operator, number1, number2));

@@ -1,12 +1,12 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.Random;
+import hexlet.code.Utils;
+
 public class GCD {
     private static String[] generateNumbers() {
-        Random random = new Random();
-        int number1 = random.nextInt(100);
-        int number2 = random.nextInt(100);
+        int number1 = Utils.getRandomNumbers(100);
+        int number2 = Utils.getRandomNumbers(100);
         int gcd = calculate(number1, number2);
         String question = number1 + " " + number2;
         String answer = String.valueOf(gcd);

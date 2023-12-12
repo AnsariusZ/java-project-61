@@ -1,22 +1,14 @@
 package hexlet.code.games;
 
-import java.util.Random;
 import hexlet.code.Engine;
-public class Progression {
-    private static String[] generateProgression(int first, int step, int length) {
-        String[] progression = new String[length];
-        for (int i = 0; i < length; i++) {
-            progression[i] = Integer.toString(first + i * step);
-        }
-        return progression;
-    }
+import hexlet.code.Utils;
 
+public class Progression {
     private static String[] generateNumbers() {
-        Random random = new Random();
-        var first = random.nextInt(100);
-        var step = random.nextInt(100);
+        var first = Utils.getRandomNumbers(100);
+        var step = Utils.getRandomNumbers(100);
         var length = 10;
-        var hiddenNumber = random.nextInt(9);
+        var hiddenNumber = Utils.getRandomNumbers(9);
         String[] progression = generateProgression(first, step, length);
         var answer = progression[hiddenNumber];
         progression[hiddenNumber] = "..";
@@ -33,5 +25,13 @@ public class Progression {
         }
 
         Engine.run(words, numbers);
+    }
+
+    private static String[] generateProgression(int first, int step, int length) {
+        String[] progression = new String[length];
+        for (int i = 0; i < length; i++) {
+            progression[i] = Integer.toString(first + i * step);
+        }
+        return progression;
     }
 }

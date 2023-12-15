@@ -17,14 +17,14 @@ public class Progression {
     }
 
     public static void gameProgression() {
-        final var words = "What number is missing in the progression?";
+        final var rules = "What number is missing in the progression?";
         String[][] numbers = new String[3][2];
         for (int i = 0; i < 3; i++) {
             String[] progression = generateNumbers();
             numbers[i] = progression;
         }
 
-        Engine.run(words, numbers);
+        Engine.run(rules, numbers);
     }
 
     private static String[] generateProgression(int first, int step, int length) {

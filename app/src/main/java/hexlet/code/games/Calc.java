@@ -18,13 +18,13 @@ public class Calc {
         return new String[]{question, answer};
     }
     public static void gameCalc() {
-        final var words = "What is the result of the expression?";
+        final var rules = "What is the result of the expression?";
         String[][] numbers = new String[3][2];
         for (int i = 0; i < 3; i += 1) {
             numbers[i] = generateNumbers();
         }
 
-        Engine.run(words, numbers);
+        Engine.run(rules, numbers);
     }
     private static int calculate(String operator, int number1, int number2) {
         switch (operator) {

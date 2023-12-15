@@ -23,12 +23,12 @@ public class GCD {
     }
 
     public static void gameGcd() {
-        final var words = "Find the greatest common divisor of given numbers.";
+        final var rules = "Find the greatest common divisor of given numbers.";
         String[][] numbers = new String[3][2];
         for (int i = 0; i < 3; i += 1) {
             numbers[i] = generateNumbers();
         }
 
-        Engine.run(words, numbers);
+        Engine.run(rules, numbers);
     }
 }

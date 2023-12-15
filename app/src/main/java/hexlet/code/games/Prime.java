@@ -24,12 +24,12 @@ public class Prime {
     }
 
     public static void gamePrime() {
-        final var words = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+        final var rules = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
         String[][] numbers = new String[3][2];
         for (int i = 0; i < 3; i += 1) {
             numbers[i] = generateNumbers();
         }
 
-        Engine.run(words, numbers);
+        Engine.run(rules, numbers);
     }
 }

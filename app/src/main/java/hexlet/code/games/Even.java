@@ -16,12 +16,12 @@ public class Even {
     }
 
     public static void gameEven() {
-        final var words = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+        final var rules = "Answer 'yes' if the number is even, otherwise answer 'no'.";
         String[][] numbers = new String[3][2];
         for (int i = 0; i < 3; i += 1) {
             numbers[i] = generateNumbers();
         }
 
-        Engine.run(words, numbers);
+        Engine.run(rules, numbers);
     }
 }

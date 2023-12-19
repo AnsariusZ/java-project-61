@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 
 public class Progression {
     private static final int BOUND = 100;
-    private static final int GAMEPOINT = 3;
+    private static final int COUNT_ROUNDS = 3;
     private static final int ARRAYCOLUMNS = 3;
     private static final int ARRAYLINES = 2;
     private static final int BOUNDONE = 1;
@@ -25,7 +25,7 @@ public class Progression {
     public static void gameProgression() {
         final var rules = "What number is missing in the progression?";
         String[][] numbers = new String[ARRAYCOLUMNS][ARRAYLINES];
-        for (int i = 0; i < GAMEPOINT; i++) {
+        for (int i = 0; i < COUNT_ROUNDS; i++) {
             String[] progression = generateNumbers();
             numbers[i] = progression;
         }

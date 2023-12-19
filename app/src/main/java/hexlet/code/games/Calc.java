@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 
 public class Calc {
     private static final int BOUND = 100;
-    private static final int GAMEPOINT = 3;
+    private static final int COUNT_ROUNDS = 3;
     private static final int ARRAYCOLUMNS = 3;
     private static final int ARRAYLINES = 2;
     private static final int OPERATOR = 2;
@@ -27,7 +27,7 @@ public class Calc {
     public static void gameCalc() {
         final var rules = "What is the result of the expression?";
         String[][] numbers = new String[ARRAYCOLUMNS][ARRAYLINES];
-        for (int i = 0; i < GAMEPOINT; i += 1) {
+        for (int i = 0; i < COUNT_ROUNDS; i += 1) {
             numbers[i] = generateNumbers();
         }
 

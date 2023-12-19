@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 
 public class Even {
     private static final int BOUND = 100;
-    private static final int GAMEPOINT = 3;
+    private static final int COUNT_ROUNDS = 3;
     private static final int ARRAYCOLUMNS = 3;
     private static final int ARRAYLINES = 2;
 
@@ -23,7 +23,7 @@ public class Even {
     public static void gameEven() {
         final var rules = "Answer 'yes' if the number is even, otherwise answer 'no'.";
         String[][] numbers = new String[ARRAYCOLUMNS][ARRAYLINES];
-        for (int i = 0; i < GAMEPOINT; i += 1) {
+        for (int i = 0; i < COUNT_ROUNDS; i += 1) {
             numbers[i] = generateNumbers();
         }
 

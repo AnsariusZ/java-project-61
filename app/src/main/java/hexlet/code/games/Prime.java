@@ -17,7 +17,7 @@ public class Prime {
     }
 
     public static String[] generateNumbers() {
-        int number = Utils.getRandomNumbers(100);
+        int number = Utils.getRandomNumbers(0, 100);
         String question = String.valueOf(number);
         String answer = isPrime(number) ? "yes" : "no";
         return new String[]{question, answer};

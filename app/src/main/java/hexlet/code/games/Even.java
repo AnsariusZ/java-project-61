@@ -9,7 +9,7 @@ public class Even {
     }
 
     private static String[] generateNumbers() {
-        int number = Utils.getRandomNumbers(100);
+        int number = Utils.getRandomNumbers(0, 100);
         String question = String.valueOf(number);
         String answer = isEven(number) ? "yes" : "no";
         return new String[]{question, answer};

@@ -1,7 +1,10 @@
 package hexlet.code;
 
-import hexlet.code.games.*;
-
+import hexlet.code.games.Even;
+import hexlet.code.games.Calc;
+import hexlet.code.games.GCD;
+import hexlet.code.games.Prime;
+import hexlet.code.games.Progression;
 import java.util.Scanner;
 
 public class App {
@@ -38,6 +41,8 @@ public class App {
             case "6":
                 Prime.gamePrime();
                 break;
+            default:
+                System.out.println("Please, make sure that you chose the right number!");
         }
 
         scanner.close();

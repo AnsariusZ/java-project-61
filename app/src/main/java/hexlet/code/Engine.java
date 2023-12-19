@@ -18,7 +18,8 @@ public class Engine {
             System.out.println("Your answer: ");
             String userAnswer = scanner.next();
             if (!userAnswer.equalsIgnoreCase(correctAnswer)) {
-                System.out.println("'" + userAnswer + "'" + " is wrong answer ;(. Correct answer was " + "'" + correctAnswer + "'");
+                String firstpart = "'" + userAnswer + "'" + " is wrong answer ;(. Correct answer was ";
+                System.out.println(firstpart + "'" + correctAnswer + "'");
                 System.out.println("Let's try again, " + userName + "!");
                 break;
             }

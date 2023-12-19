@@ -14,7 +14,7 @@ public class Engine {
         for (int i = 0; i < GAMEPOINT; i++) {
             String question = numbers[i][0];
             String correctAnswer = numbers[i][1];
-            System.out.println("Question " + question);
+            System.out.println("Question: " + question);
             System.out.println("Your answer: ");
             String userAnswer = scanner.next();
             if (!userAnswer.equalsIgnoreCase(correctAnswer)) {

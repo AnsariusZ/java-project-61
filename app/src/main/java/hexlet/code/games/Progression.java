@@ -5,10 +5,10 @@ import hexlet.code.Utils;
 
 public class Progression {
     private static String[] generateNumbers() {
-        var first = Utils.getRandomNumbers(100);
-        var step = Utils.getRandomNumbers(100);
+        var first = Utils.getRandomNumbers(1, 100);
+        var step = Utils.getRandomNumbers(1, 100);
         var length = 10;
-        var hiddenNumber = Utils.getRandomNumbers(9);
+        var hiddenNumber = Utils.getRandomNumbers(0, 7);
         String[] progression = generateProgression(first, step, length);
         var answer = progression[hiddenNumber];
         progression[hiddenNumber] = "..";

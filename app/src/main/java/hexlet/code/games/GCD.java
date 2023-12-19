@@ -5,8 +5,8 @@ import hexlet.code.Utils;
 
 public class GCD {
     private static String[] generateNumbers() {
-        int number1 = Utils.getRandomNumbers(100);
-        int number2 = Utils.getRandomNumbers(100);
+        int number1 = Utils.getRandomNumbers(0, 100);
+        int number2 = Utils.getRandomNumbers(0, 100);
         int gcd = calculate(number1, number2);
         String question = number1 + " " + number2;
         String answer = String.valueOf(gcd);

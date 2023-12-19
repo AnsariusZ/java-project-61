@@ -5,13 +5,13 @@ import hexlet.code.Utils;
 
 public class Calc {
     private static String getRandomOperator() {
-        int randomNumber = Utils.getRandomNumbers(3);
+        int randomNumber = Utils.getRandomNumbers(0, 2);
         String[] operators = {"+", "-", "*"};
         return operators[randomNumber];
     }
     private static String[] generateNumbers() {
-        int number1 = Utils.getRandomNumbers(100);
-        int number2 = Utils.getRandomNumbers(100);
+        int number1 = Utils.getRandomNumbers(1, 100);
+        int number2 = Utils.getRandomNumbers(1, 100);
         String operator = getRandomOperator();
         String question = number1 + " " + operator + " " + number2;
         String answer = String.valueOf(calculate(operator, number1, number2));
